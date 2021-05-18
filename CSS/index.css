@@ -1,0 +1,30 @@
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Main */
+
+h1 {
+  font-size: 3.5em;
+}
+
+.cta-started {
+  background: #e9e9e9;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: solid 2px #000000;
+}
+
+.container-img {
+  display: flex;
+}
+
+.container-img > * {
+  flex: 1;
+  padding: 5px;
+  margin: 100px 0;
+}

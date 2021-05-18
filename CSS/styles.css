@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(to bottom right, #87e2ef 0%, #b8e9c5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1,
+ul {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
+    sans-serif;
+}
+
+header {
+  background: #1b203d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAV */
+
+nav li {
+  display: inline;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 1.4em;
+  padding: 50px;
+}
+
+.nav-links a:hover {
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.nav-icons a {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.nav-icons {
+  margin-right: 20px;
+}
+
+.nav-icon {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 1.4em;
+}
