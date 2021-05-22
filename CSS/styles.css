@@ -38,12 +38,15 @@ nav li {
 .nav-links a {
   color: #fff;
   font-size: 1.4em;
-  padding: 50px;
+  padding: 36px 50px;
+  transition-property: background;
+  transition-duration: 1s;
 }
 
 .nav-links a:hover {
-  font-size: 1.5em;
   text-decoration: underline;
+  color: #000;
+  background: #f0faf5;
 }
 
 .nav-icons a {
@@ -62,4 +65,84 @@ nav li {
   color: #fff;
   margin-left: 10px;
   font-size: 1.4em;
+}
+
+/* Footer */
+
+footer {
+  min-height: 20vh;
+  background: #b4b4b4;
+}
+
+.container-footer1 {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+footer a {
+  color: #000;
+  margin: 2px;
+  padding: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.container-footer2 {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 10px auto auto auto;
+}
+
+footer i {
+  font-size: 2.5em;
+  padding: 20px;
+}
+
+@media (min-width: 700px) {
+  footer a {
+    margin: 8px;
+    font-size: 1em;
+  }
+
+  footer i {
+    font-size: 3em;
+  }
+
+  .footer-links {
+    margin: 0;
+  }
+
+  .container-footer1,
+  .container-footer2 {
+    width: 80%;
+  }
+
+  .container-footer1 {
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: start;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container-footer1 {
+    max-width: 1200px;
+  }
 }

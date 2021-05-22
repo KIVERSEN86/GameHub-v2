@@ -6,7 +6,12 @@ main {
 /* Main */
 
 h1 {
+  font-family: pirulen, "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 3.5em;
+}
+
+.welcome {
+  margin-top: 75px;
 }
 
 .cta-started {
@@ -14,16 +19,24 @@ h1 {
   color: #000;
   font-size: 1.5em;
   font-weight: bold;
-  padding: 8px 25px;
+  padding: 10px 60px;
   border-radius: 10px;
   border: solid 2px #000000;
+  text-transform: uppercase;
+  transition-property: border-radius, background;
+  transition-duration: 0.5s;
+}
+
+.container-selling a:hover {
+  border-radius: 30px;
+  background: #ffe9e6;
 }
 
 .container-img {
   display: flex;
 }
 
-.container-img > * {
+.box-img > * {
   flex: 1;
   padding: 5px;
   margin: 100px 0;
