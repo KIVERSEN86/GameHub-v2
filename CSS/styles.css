@@ -7,9 +7,22 @@ body {
 }
 
 h1,
-ul {
+h2,
+h3,
+h4,
+ul,
+.cta,
+.cta-cart {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
     sans-serif;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+hr {
+  border: solid 1px #000;
 }
 
 header {
@@ -24,8 +37,16 @@ header {
   margin-left: 20px;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
+}
+
+.current {
+  text-decoration: underline;
 }
 
 /* NAV */
@@ -40,7 +61,7 @@ nav li {
   font-size: 1.4em;
   padding: 36px 50px;
   transition-property: background;
-  transition-duration: 1s;
+  transition-duration: 0.8s;
 }
 
 .nav-links a:hover {
@@ -72,6 +93,7 @@ nav li {
 footer {
   min-height: 20vh;
   background: #b4b4b4;
+  margin-top: 75px;
 }
 
 .container-footer1 {
@@ -81,6 +103,10 @@ footer {
   padding-top: 10px;
   flex-direction: column;
   text-align: center;
+}
+
+.container-footer2 i:hover {
+  color: #fff;
 }
 
 .footer-links {
