@@ -28,6 +28,7 @@ hr {
 header {
   background: #1b203d;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -51,41 +52,68 @@ a {
 
 /* NAV */
 
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+.icon-burger {
+  color: #fff;
+  margin-right: 15px;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.nav-container {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  right: 0px;
+  background: #1b203d;
+}
+
 nav li {
-  display: inline;
+  display: block;
   font-weight: bold;
 }
 
-.nav-links a {
+nav a {
   color: #fff;
-  font-size: 1.4em;
-  padding: 36px 50px;
-  transition-property: background;
-  transition-duration: 0.8s;
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav-links a {
+  font-size: 1.4rem;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
-  color: #000;
-  background: #f0faf5;
 }
 
-.nav-icons a {
+.secondary-nav {
+  flex: 0 0 100%;
+  background: #317ba8d6;
+}
+
+.secondary-nav a {
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-}
-
-.nav-icons {
-  margin-right: 20px;
+  display: inline-block;
+  padding: 10px;
 }
 
 .nav-icon {
   color: #fff;
-  margin-left: 10px;
-  font-size: 1.4em;
+  font-size: 1.2rem;
+  padding-right: 2px;
 }
 
 /* Footer */
@@ -119,7 +147,7 @@ footer a {
   color: #000;
   margin: 2px;
   padding: 5px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -137,18 +165,18 @@ footer a:hover {
 }
 
 footer i {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding: 20px;
 }
 
 @media (min-width: 700px) {
   footer a {
     margin: 8px;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   footer i {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   .footer-links {
@@ -167,8 +195,63 @@ footer i {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1150px) {
   .container-footer1 {
     max-width: 1200px;
+  }
+
+  header label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  .nav-links {
+    margin: 0;
+  }
+
+  .secondary-nav {
+    flex: 0 1 auto;
+    background: none;
+  }
+
+  .secondary-nav a {
+    font-size: 1.4rem;
+  }
+
+  nav a,
+  .secondary-nav a,
+  .nav-icon {
+    color: #fff;
+  }
+
+  .nav-links a {
+    font-size: 1.4rem;
+    padding: 36px 50px;
+    margin-right: 0px;
+    transition-property: background;
+    transition-duration: 0.8s;
+  }
+
+  .secondary-nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+    color: #000;
+    background: #f0faf5;
+  }
+
+  .secondary-nav a {
+    padding: 10px;
   }
 }

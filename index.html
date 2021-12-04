@@ -13,8 +13,13 @@
 </head>
 <body>
     <header>
+      <div>
         <a href="index.html"><img src="images/GameHub_Logo.png" class="logo frontpage-logo" alt="Game Hub logo"/></a>
-        <nav class="navbar">
+      </div>
+      <div class="nav-container">
+        <input type="checkbox" id="hamburger-menu">
+        <label for="hamburger-menu"><i class="fas fa-bars icon-burger fa-2x"></i></label>
+        <nav>
             <ul class="nav-links">
                <li><a href="index.html" class="current">Home</a></li>
                <li><a href="Games.html">Games</a></li>
@@ -22,14 +27,11 @@
                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="nav-icons">
-          <i class="fas fa-headset nav-icon"></i>
-          <a href="contact.html">Help</a>
-        <i class="fas fa-user-circle nav-icon"></i>
-          <a href="createaccount.html">Login</a>
-        <i class="fas fa-shopping-cart nav-icon"></i>
-          <a href="cart.html">Cart</a>
-        </div>  
+      </div>
+        <section class="secondary-nav">
+            <a href="createaccount.html"><i class="fas fa-user-circle nav-icon"></i>Login</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart nav-icon"></i>Cart</a>
+        </section>
     </header>
     <main>
         <section class="welcome">
@@ -54,7 +56,6 @@
             </div>
           </div>
         </section>
-
         <h3>Weekly Offers</h3>
         <section class="section-weekly">
           <div class="weekly-container">
@@ -143,19 +144,17 @@
           <div class="footer-links">
             <a href="#">Terms of use</a>
             <a href="#">Privacy Policy</a>
-            <a href="contact.html">Volunteer</a>
             <a href="contact.html">Jobs</a>
           </div>
           <div class="footer-links">
             <a href="contact.html">Contact us</a>
-            <a href="#">Projects</a>
             <a href="#">Press</a>
             <a href="#">FAQ</a>
           </div>
           <div class="footer-links">
             <a href="index.html">Home</a>
-            <a href="#">Floor map</a>
-            <a href="#">Café</a>
+            <a href="#">Members Club</a>
+            <a href="#">Orders</a>
           </div>
         </section>
         <section class="container-footer2">

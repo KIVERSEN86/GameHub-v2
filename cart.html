@@ -12,25 +12,27 @@
     <title>Game Hub</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="images/GameHub_Logo.png" class="logo frontpage-logo" alt="Game Hub logo"/></a>
-        <nav class="navbar">
-            <ul class="nav-links">
-               <li><a href="index.html" class="current">Home</a></li>
-               <li><a href="Games.html">Games</a></li>
-               <li><a href="categories.html">Categories</a></li>
-               <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="nav-icons">
-          <i class="fas fa-headset nav-icon"></i>
-          <a href="contact.html">Help</a>
-        <i class="fas fa-user-circle nav-icon"></i>
-          <a href="createaccount.html">Login</a>
-        <i class="fas fa-shopping-cart nav-icon"></i>
-          <a href="cart.html" class="current">Cart</a>
-        </div>  
-    </header>
+  <header>
+    <div>
+      <a href="index.html"><img src="images/GameHub_Logo.png" class="logo frontpage-logo" alt="Game Hub logo"/></a>
+    </div>
+    <div class="nav-container">
+      <input type="checkbox" id="hamburger-menu">
+      <label for="hamburger-menu"><i class="fas fa-bars icon-burger fa-2x"></i></label>
+      <nav>
+          <ul class="nav-links">
+             <li><a href="index.html" class="current">Home</a></li>
+             <li><a href="Games.html">Games</a></li>
+             <li><a href="categories.html">Categories</a></li>
+             <li><a href="Contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+      <section class="secondary-nav">
+          <a href="createaccount.html"><i class="fas fa-user-circle nav-icon"></i>Login</a>
+          <a href="cart.html"><i class="fas fa-shopping-cart nav-icon"></i>Cart</a>
+      </section>
+  </header>
     <main>
         <section class="section-cart">
             <h1>Cart</h1>
