@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here you will be able to contact us">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1235c982e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/fbf6vwr.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+      <div>
+        <a href="index.html"><img src="images/GameHub_Logo.png" class="logo frontpage-logo" alt="Game Hub logo"/></a>
+      </div>
+      <div class="nav-container">
+        <input type="checkbox" id="hamburger-menu">
+        <label for="hamburger-menu"><i class="fas fa-bars icon-burger fa-2x"></i></label>
+        <nav>
+            <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="Games.html">Games</a></li>
+               <li><a href="categories.html">Categories</a></li>
+               <li><a href="Contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+        <section class="secondary-nav">
+            <a href="createaccount.html"><i class="fas fa-user-circle nav-icon"></i>Login</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart nav-icon"></i>Cart</a>
+        </section>
+    </header>
+    <main>
+        <h1>Contact Game Hub</h1>
+        <div class="success-form" id="form-validation">Your request has been successfully submitted!</div>
+        <form id="form-contact">
+            <div class="form-container">
+                <section class="form-section1">
+                  <div class="flex-form">
+                    <label for=firstname>First name</label>
+                    <input type="text" id="firstname">
+                    <div class="error-form" id="firstNameError">Your first name must be a minimum of two characters</div>
+                  </div>
+                  <div class="flex-form">
+                    <label for=lastname>Last name</label>
+                    <input type="text" id="lastname">
+                    <div class="error-form" id="lastNameError">Your last name must be a minimum of two characters</div>
+                  </div>
+                  <div class="flex-form">
+                    <label for=email>Email</label>
+                    <input type="text" id="email">
+                    <div class="error-form" id="emailError">You must enter a valid email address</div>
+                  </div>
+                  <div class="flex-form">
+                    <label for="telephone">Telephone</label>
+                    <input type="text" id="telephone">
+                    <div class="error-form" id="telephoneError">You must enter a minimum of 8 digits</div>
+                  </div>
+                  <div class="flex-form" id="subject-form">
+                    <label>Subject</label>
+                    <select id="subject">
+                        <option value="Account">Account</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Return">Return</option>
+                        <option value="Covid-19">Covid-19</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <div class="error-form" id="subjectError">Please select a subject</div>
+                  </div>
+                </section>
+                <section class="form-section2">
+                  <div class="flex-form">
+                    <label for="message">Message</label>
+                    <textarea id=message name=message></textarea>                
+                    <button class="cta-submit">Submit</button>
+                  </div>
+                </section>
+            </div>
+        </form>
+      </main>
+      <footer>
+        <section class="container-footer1">
+          <div class="footer-links">
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="contact.html">Jobs</a>
+          </div>
+          <div class="footer-links">
+            <a href="contact.html">Contact us</a>
+            <a href="#">Press</a>
+            <a href="#">FAQ</a>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#">Members Club</a>
+            <a href="#">Orders</a>
+          </div>
+        </section>
+        <section class="container-footer2">
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram-square"></i>
+        </section>
+      </footer>
+      <script src="js/error.js"></script>
+      <script src="js/contact.js"></script>
+</body>
+</html>

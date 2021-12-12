@@ -17,8 +17,14 @@ ul,
     sans-serif;
 }
 
-p {
+p,
+.success-form,
+label {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 hr {
@@ -114,6 +120,20 @@ nav a {
   color: #fff;
   font-size: 1.2rem;
   padding-right: 2px;
+}
+
+/* Forms */
+
+.error-form {
+  display: none;
+  color: red;
+}
+
+.success-form {
+  display: none;
+  font-size: 1.8rem;
+  margin: 20px auto;
+  text-align: center;
 }
 
 /* Footer */

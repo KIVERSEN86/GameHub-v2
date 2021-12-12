@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here you will be able to contact us">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/signup.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1235c982e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/fbf6vwr.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <header>
+      <div>
+        <a href="index.html"><img src="images/GameHub_Logo.png" class="logo frontpage-logo" alt="Game Hub logo"/></a>
+      </div>
+      <div class="nav-container">
+        <input type="checkbox" id="hamburger-menu">
+        <label for="hamburger-menu"><i class="fas fa-bars icon-burger fa-2x"></i></label>
+        <nav>
+            <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="Games.html">Games</a></li>
+               <li><a href="categories.html">Categories</a></li>
+               <li><a href="Contact.html" class="current">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+        <section class="secondary-nav">
+            <a href="createaccount.html"><i class="fas fa-user-circle nav-icon"></i>Login</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart nav-icon"></i>Cart</a>
+        </section>
+    </header>
+    <main>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/GameHub_Logo.png" class="logo-signup" alt="Game Hub logo"/></a>
+        </div>
+        <h1>Why choose us?</h1>
+        <section>
+            <div class="signup-container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, est!
+                    Autem provident iste quasi alias. Quisquam minus perferendis quaerat tempore.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corrupti ipsum optio tempore reprehenderit.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corrupti ipsum optio tempore reprehenderit.
+                     Eos nobis ducimus iure quam labore cumque vero cupiditate quos, iste a amet voluptatum porro nemo!
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corrupti ipsum optio tempore reprehenderit.
+                     Eos nobis ducimus iure quam labore cumque vero cupiditate quos, iste a amet voluptatum porro nemo!
+                    </p>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="success-form" id="form-validation">Your request has been successfully submitted!</div>
+            <div class="form-container">
+                <form id="form-signup">
+                    <div class="flex-form">
+                      <label for=fullname>Full name</label>
+                      <input type="text" id="fullname">
+                      <div class="error-form" id="fullNameError">Your first name must be a minimum of two characters</div>
+                    </div>
+                    <div class="flex-form">
+                      <label for=lastname>Username</label>
+                      <input type="text" id="username">
+                      <div class="error-form" id="userNameError">Your last name must be a minimum of two characters</div>
+                    </div>
+                    <div class="flex-form">
+                      <label for=email>Email</label>
+                      <input type="text" id="email">
+                      <div class="error-form" id="emailError">You must enter a valid email address</div>
+                    </div>
+                    <div class="flex-form">
+                      <label for="telephone">Telephone</label>
+                      <input type="text" id="telephone">
+                      <div class="error-form" id="telephoneError">You must enter a minimum of 8 digits</div>
+                    </div>
+                    <div class="flex-form">
+                        <label for="password">Password</label>
+                        <input type="text" id="password">
+                        <div class="error-form" id="passwordError">You must enter a minimum of 8 digits</div>
+                      </div>
+                    <div class="cta-container">
+                        <button class="cta-cancel">Cancel</button>
+                        <button class="cta-create">Create account</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+      </main>
+      <footer>
+        <section class="container-footer1">
+          <div class="footer-links">
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="contact.html">Jobs</a>
+          </div>
+          <div class="footer-links">
+            <a href="contact.html">Contact us</a>
+            <a href="#">Press</a>
+            <a href="#">FAQ</a>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="#">Members Club</a>
+            <a href="#">Orders</a>
+          </div>
+        </section>
+        <section class="container-footer2">
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram-square"></i>
+        </section>
+      </footer>
+      <script src="js/error.js"></script>
+</body>
+</html>
