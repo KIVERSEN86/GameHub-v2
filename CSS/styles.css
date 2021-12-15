@@ -68,6 +68,10 @@ nav,
   margin-right: 15px;
 }
 
+.rotate90 {
+  transform: rotate(90deg);
+}
+
 #hamburger-menu:checked ~ nav {
   display: block;
 }
