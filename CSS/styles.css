@@ -126,6 +126,16 @@ nav a {
   padding-right: 2px;
 }
 
+.searchbar {
+  padding: 10px 300px 10px 0;
+  margin-left: 80px;
+  border-radius: 0;
+}
+
+.fa-search {
+  font-size: 2rem;
+}
+
 /* Forms */
 
 .error-form {

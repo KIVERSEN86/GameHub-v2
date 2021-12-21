@@ -73,4 +73,5 @@ label {
 
 .cta-container button:hover {
   border-radius: 20px;
+  cursor: pointer;
 }
