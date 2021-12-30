@@ -1,0 +1,62 @@
+main {
+  margin: 75px auto 0 auto;
+  max-width: 600px;
+  background: #fff;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.paragraph-forgot {
+  margin-top: 60px;
+}
+
+.form-login {
+  max-width: 300px;
+  margin: auto;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.button-login {
+  padding: 10px 126px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  background: #fdc309;
+  transition-property: border-radius, background;
+  transition-duration: 0.5s;
+}
+
+label {
+  margin: 15px 0 2px 0;
+}
+
+.button-password {
+  padding: 10px 89px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 15px 0 60px 0;
+  background: #fdc309;
+  transition-property: border-radius, background;
+  transition-duration: 0.5s;
+}
+
+.form-login button:hover {
+  border-radius: 20px;
+  background: #fef603;
+}

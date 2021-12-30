@@ -19,7 +19,8 @@ ul,
 
 p,
 .success-form,
-label {
+label,
+.nav-games {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -254,6 +255,7 @@ footer i {
   .secondary-nav {
     flex: 0 1 auto;
     background: none;
+    margin-right: 10px;
   }
 
   .secondary-nav a {

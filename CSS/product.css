@@ -21,6 +21,15 @@ h3 {
   padding: 20px 0;
 }
 
+h4 {
+  font-size: 1.2rem;
+  background: #1b203d;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0px 0 10px 0;
+}
+
 h1,
 .container-prodinfo,
 .paragraph-product {
@@ -90,6 +99,7 @@ h1,
 .container-prodinfo {
   border: solid 1px lightslategrey;
   max-width: 600px;
+  max-height: 300px;
 }
 
 .container-product2 {
@@ -106,4 +116,16 @@ h1,
 .container-prodinfo2 p {
   font-size: 1rem;
   font-weight: bold;
+  margin-left: 10px;
+}
+
+.container-prodinfo,
+.container-prodinfo2 {
+  margin-bottom: 50px;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }

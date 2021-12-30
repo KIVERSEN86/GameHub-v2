@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your number #1 site for selling and buying games">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/cart.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b1235c982e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/fbf6vwr.css">
     <title>Game Hub</title>
@@ -34,55 +34,52 @@
         <a href="login.html"><i class="fas fa-user-circle nav-icon"></i>Login</a>
       </section>
   </header>
-    <main>
-        <section class="section-cart">
-            <h1>Cart</h1>
-            <div class="container-cart">
-                <div>
-                    <img src="images/Image-2.jpg" alt="Image of a laptop with a headset, joystick and a controller" class="image-cart">
-                </div>
-                <div>
-                    <h2>Zelda Ocarina of Time</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi culpa distinctio officia earum dignissimos pariatur quis quasi tenetur ad iusto.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempora eaque perspiciatis aliquam culpa alias quam quibusdam pariatur, optio temporibus?</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempora eaque perspiciatis aliquam culpa alias quam quibusdam pariatur, optio temporibus?</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempora eaque perspiciatis aliquam culpa alias quam quibusdam pariatur, optio temporibus?</p>
-                </div>
-                <div class="cta-flex">
-                    <a href="checkout.html" class="cta-cart">Proceed to checkout</a>
-                    <a href="checkout.html" class="cta-cart">Continue shopping</a>
-                </div>
+    <main>  
+        <section>
+            <h1>Login to your Game Hub account</h1>
+            <div class="form-login">
+                <form>
+                    <div class="form-flex">
+                        <label for=email>Email</label>
+                        <input type="text" id="username">
+                        <div class="error-form" id="emailError">Your email is invalid</div>
+                      </div>
+                      <div class="form-flex">
+                        <label for=password>Password</label>
+                        <input type="text" id="password">
+                        <div class="error-form" id="passwordError">Your password must be a minimum of 8 characters</div>
+                      </div>
+                      <button class="button-login">Login</button>
+                      <div class="paragraph-forgot">
+                        <p><strong>Forgot your password?</strong></p>
+                        <p>Submit your email below and we will send instructions on how to create a new password</p>
+                      </div>
+                      <div class="form-flex">
+                        <label for=email>Email</label>
+                        <input type="text" id="username">
+                        <div class="error-form" id="emailError">Your email is invalid</div>
+                      </div>
+                      <button class="button-password">New password</button>
+                </form>
             </div>
-            <hr>
-            <section class="section-recommended">
-                <h3>Customers that bought this also bought</h3>
-                <div class="container-recommended">
-                    <img src="images/Image-2.jpg" alt="Image of a laptop with a headset, joystick and a controller" class="image-rec">
-                    <img src="images/Image-2.jpg" alt="Image of a laptop with a headset, joystick and a controller" class="image-rec">
-                    <img src="images/Image-2.jpg" alt="Image of a laptop with a headset, joystick and a controller" class="image-rec">
-                    <img src="images/Image-2.jpg" alt="Image of a laptop with a headset, joystick and a controller" class="image-rec">
-                </div>
-            </section>
         </section>
-      </main>
+    </main>
       <footer>
         <section class="container-footer1">
           <div class="footer-links">
             <a href="#">Terms of use</a>
             <a href="#">Privacy Policy</a>
-            <a href="contact.html">Volunteer</a>
             <a href="contact.html">Jobs</a>
           </div>
           <div class="footer-links">
             <a href="contact.html">Contact us</a>
-            <a href="#">Projects</a>
             <a href="#">Press</a>
             <a href="#">FAQ</a>
           </div>
           <div class="footer-links">
             <a href="index.html">Home</a>
-            <a href="#">Floor map</a>
-            <a href="#">Café</a>
+            <a href="#">Members Club</a>
+            <a href="#">Orders</a>
           </div>
         </section>
         <section class="container-footer2">
