@@ -151,8 +151,7 @@ nav a {
 
 .nav-icon {
   color: #fff;
-  font-size: 1.2rem;
-  padding-right: 2px;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -326,10 +325,6 @@ footer i {
     flex: 0 1 auto;
     background: none;
     margin-right: 10px;
-  }
-
-  .secondary-nav a {
-    font-size: 1.4rem;
   }
 
   .addtocart {
