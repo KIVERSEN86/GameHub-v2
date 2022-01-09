@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="On this page you can log in to your account">
+    <meta name="description" content="On this page you can contact us">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/contact.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b1235c982e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/fbf6vwr.css">
-    <title>Login</title>
+    <title>Contact</title>
 </head>
 <body>
     <header>
@@ -30,8 +30,10 @@
         </nav>
       </div>
         <section class="secondary-nav">
-          <a href="cart.html"><i class="fas fa-shopping-cart nav-icon"></i>Cart</a>
+          <div class="navIcon-flex">
+            <a href="cart.html"><i class="fas fa-shopping-cart nav-icon"></i>Cart</a>
             <a href="login.html"><i class="fas fa-user-circle nav-icon"></i>Login</a>
+          </div>
         </section>
     </header>
     <main>
@@ -63,7 +65,7 @@
                   <div class="flex-form" id="subject-form">
                     <label>Subject</label>
                     <select id="subject">
-                        <option valute=""></option>
+                        <option value=""></option>
                         <option value="Account">Account</option>
                         <option value="Delivery">Delivery</option>
                         <option value="Return">Return</option>
@@ -76,23 +78,24 @@
                 <section class="form-section2">
                   <div class="flex-form">
                     <label for="message">Message</label>
-                    <textarea id=message name=message></textarea>                
-                    <button class="cta-submit">Submit</button>
+                    <textarea id=message name=message></textarea>  
+                    <div class="error-form" id="textareaError">You must enter a text in order to submit your inquiry</div>   
                   </div>
+                  <button class="cta-submit">Submit</button>
                 </section>
             </div>
         </form>
         <section>
-          <div class="flex-contact">
-            <div class="contact-box">
+          <div class="flex-contact padding-bottom">
+            <div class="contact-box" alt="a square box with a large question mark linking to the FAQ part of the website">
               <a href="#">FAQ</a>
               <i class="fas fa-question-circle fa-4x contact-icon"></i>
             </div>
-            <div class="contact-box">
+            <div class="contact-box" alt="a square box with large chat bubbles linking to a live chat support">
               <a href="#">Chat with us</a>
               <i class="fas fa-comments fa-4x contact-icon"></i>
             </div>
-            <div class="contact-box">
+            <div class="contact-box" alt="a square box with a illustration of three people linking to the 'about us' part of the website">
               <a href="#">About us</a>
               <i class="fas fa-users fa-4x contact-icon"></i>
             </div>
@@ -114,7 +117,7 @@
           <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="#">Members Club</a>
-            <a href="#">Orders</a>
+            <a href="#">About us</a>
           </div>
         </section>
         <section class="container-footer2">

@@ -6,14 +6,23 @@ main {
 /* Main */
 .h1-index {
   font-family: pirulen, "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
-  font-size: 2.3em;
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-family: pirulen, "Trebuchet MS", "Lucida Sans Unicode", Arial, sans-serif;
 }
 
 h3,
 h4 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   background: #1b203d;
+}
+
+h3 a,
+h4 a {
   color: #fff;
 }
 
@@ -22,12 +31,16 @@ h4 {
   text-align: center;
 }
 
+footer {
+  margin-top: 75px;
+}
+
 .cta-started {
   background: #e9e9e9;
   color: #000;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  padding: 10px 80px;
+  padding: 8px 40px;
   border-radius: 10px;
   border: solid 2px #000000;
   text-transform: uppercase;
@@ -38,7 +51,7 @@ h4 {
 .container-selling a:hover {
   border-radius: 30px;
   background: #ffe9e6;
-  padding: 10px 40px;
+  padding: 8 30px;
 }
 
 .container-selling {
@@ -49,9 +62,14 @@ h4 {
   margin-top: 150px;
 }
 
+.front-img {
+  max-width: 300px;
+}
+
 .box-img {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .box-img div {
@@ -59,23 +77,19 @@ h4 {
   text-align: center;
 }
 
-.box-img img:hover {
-  border: 1px solid #000;
-  opacity: 50%;
-}
-
 /* Weekly Offers */
 
 .weekly-container {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
-  max-width: 600px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
-.weekly-container div:hover {
+.weekly-container div:hover,
+.deals-container div:hover {
   border: solid 2px #000;
 }
 
@@ -130,21 +144,55 @@ h4 {
 .deals-container {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
-  max-width: 600px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
 @media (min-width: 700px) {
+  .h1-index {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 2rem;
+  }
+
+  .cta-started {
+    font-size: 1.7rem;
+    padding: 10px 80px;
+  }
+
+  .container-selling a:hover {
+    padding: 10px 40px;
+  }
+
+  .box-img {
+    flex-direction: row;
+  }
+
+  .front-img {
+    max-width: 100%;
+  }
+
+  .deals-container,
+  .weekly-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .weekly-container,
+  .deals-container {
+    max-width: 600px;
+  }
 }
 
 @media (min-width: 1200px) {
-  h3,
-  h4 {
-    font-size: 2.5rem;
-  }
-
   .h1-index {
     font-size: 3.5rem;
   }
@@ -153,11 +201,5 @@ h4 {
   .weekly-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: none;
-  }
-}
-
-@media (min-width: 1350px) {
-  nav {
-    display: block;
   }
 }

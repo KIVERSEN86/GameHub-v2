@@ -5,10 +5,11 @@ main {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 h2 {
+  font-size: 1.2rem;
   padding: 0 10px;
 }
 
@@ -30,12 +31,6 @@ h4 {
   margin: 0px 0 10px 0;
 }
 
-h1,
-.container-prodinfo,
-.paragraph-product {
-  margin-left: 10px;
-}
-
 .section-product2 {
   margin-top: 50px;
 }
@@ -47,13 +42,15 @@ h1,
 }
 
 .product-price {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .container-product {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-img {
@@ -74,6 +71,7 @@ h1,
 
 .paragraph-product {
   font-size: 1rem;
+  padding: 0 10px;
 }
 
 .prod-img {
@@ -82,7 +80,7 @@ h1,
 
 .cta-add {
   border-radius: 5px;
-  padding: 12px 60px;
+  padding: 12px 40px;
   background: #fdc309;
   color: #000;
   font-weight: bold;
@@ -98,24 +96,27 @@ h1,
 
 .container-prodinfo {
   border: solid 1px lightslategrey;
-  max-width: 600px;
-  max-height: 300px;
+  max-width: 360px;
+}
+
+.bold-paragraph {
+  font-weight: bold;
 }
 
 .container-product2 {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-prodinfo2 {
   border: solid 1px lightslategrey;
-  width: 444px;
-  margin-right: 10px;
+  width: 360px;
 }
 
 .container-prodinfo2 p {
   font-size: 1rem;
-  font-weight: bold;
   margin-left: 10px;
 }
 
@@ -128,4 +129,49 @@ h1,
   display: flex;
   align-items: center;
   margin-left: 10px;
+}
+
+@media (min-width: 650px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container-product,
+  .container-product2 {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .container-prodinfo2 {
+    width: 444px;
+    margin-right: 10px;
+  }
+
+  .container-prodinfo {
+    max-width: 600px;
+  }
+
+  h1,
+  .container-prodinfo,
+  .paragraph-product {
+    margin-left: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-price {
+    font-size: 2rem;
+  }
+
+  .cta-add {
+    padding: 12px 60px;
+  }
 }

@@ -1,12 +1,13 @@
 main {
-  margin: 75px auto 0 auto;
-  max-width: 600px;
+  margin: 100px auto 100px auto;
+  max-width: 360px;
   background: #fff;
 }
 
 h1 {
   text-align: center;
   padding-top: 20px;
+  font-size: 1.3rem;
 }
 
 p {
@@ -59,4 +60,14 @@ label {
 .form-login button:hover {
   border-radius: 20px;
   background: #fef603;
+}
+
+@media (min-width: 610px) {
+  main {
+    max-width: 600px;
+  }
+
+  h1 {
+    font-size: 1, 5rem;
+  }
 }

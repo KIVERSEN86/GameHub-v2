@@ -7,10 +7,12 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const telephone = document.querySelector("#telephone");
 const telephoneError = document.querySelector("#telephoneError");
-const subject = document.querySelector("#subject-form");
-const subjectError = document.querySelector("#subjectError");
 const formValid = document.querySelector("#form-validation");
 const successMessage = document.querySelector("#form-validation");
+const textarea = document.querySelector("#message");
+const textareaError = document.querySelector("#textareaError");
+const subject = document.querySelector("#subject");
+const subjectError = document.querySelector("#subjectError")
 const button = document.querySelector("#button");
 
 function formConfirmation(event) {
@@ -46,26 +48,19 @@ function formConfirmation(event) {
         validationPassed = false;
     }
 
+    if (lengthChecker(textarea.value, 10) === true) {
+        textareaError.style.display = "none";
+    } else {
+        textareaError.style.display = "block";
+        validationPassed = false;
+    }
+
     if (validationPassed) {
 		successMessage.style.display = "block";
 	} else {
 		successMessage.style.display = "none";
 	}
-    console.log("working?");
+
 }
 
 form.addEventListener("submit", formConfirmation);
-
-function lengthChecker(value, len) {
-	if (value.trim().length > len) {
-		return true;
-	} else {
-		return false;
-	}
-}
-
-function emailConfirmation(email) {
-	const regEx = /\S+@\S+\.\S+/;
-	const correctMatch = regEx.test(email);
-	return correctMatch;
-}

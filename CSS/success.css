@@ -1,0 +1,55 @@
+main {
+  min-height: 75vh;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  margin: 150px auto 0 auto;
+  max-width: 360px;
+  background: #fff;
+}
+
+.cta-account {
+  font-weight: bold;
+  font-size: 1rem;
+  background: #fdc309;
+  color: #000;
+  transition-property: border-radius, background;
+  transition-duration: 0.5s;
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+
+.success-container a:hover {
+  border-radius: 20px;
+  background: #fef603;
+}
+
+.fa-thumbs-up {
+  font-size: 3rem;
+  margin: 30px;
+  color: green;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .fa-thumbs-up {
+    font-size: 6rem;
+  }
+
+  .success-container {
+    max-width: 700px;
+  }
+}
