@@ -24,3 +24,4 @@ function emailConfirmation(email) {
 	const correctMatch = regEx.test(email);
 	return correctMatch;
 }
+

@@ -1,8 +1,12 @@
 main {
-  max-width: 360px;
   margin: 0 auto;
   background: #fff;
   padding: 0 10px;
+}
+
+.container-width {
+  max-width: 360px;
+  margin: auto;
 }
 
 h1,
@@ -95,6 +99,10 @@ h2 {
 
 @media (min-width: 700px) {
   main {
+    max-width: 1200px;
+  }
+
+  .container-width {
     max-width: 1000px;
   }
 
