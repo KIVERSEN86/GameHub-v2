@@ -22,7 +22,7 @@ async function fetchProduct() {
         createHtml(details);
     }
     catch (error) {
-        resultsCont.innerHTML = errorFunction();
+        infoCont.innerHTML = errorFunction();
     }
 }
 fetchProduct();
