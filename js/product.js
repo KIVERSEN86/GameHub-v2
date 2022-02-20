@@ -21,8 +21,8 @@ async function fetchProduct() {
         console.log(details);
         createHtml(details);
     }
-    catch(error) {
-        console.log("WHY LISA, WHY?");
+    catch (error) {
+        resultsCont.innerHTML = errorFunction();
     }
 }
 fetchProduct();
@@ -47,6 +47,7 @@ function createHtml(details) {
                                  <a href="#" class="cta-add">Add to cart</a>
                                </div> `
 }
+
 
 
 
