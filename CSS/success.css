@@ -4,7 +4,6 @@ main {
 
 h1 {
   margin-top: 50px;
-  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -16,22 +15,12 @@ h1 {
   margin: 150px auto 0 auto;
   max-width: 360px;
   background: #fff;
+  border-radius: 10px;
 }
 
 .cta-account {
-  font-weight: bold;
-  font-size: 1rem;
-  background: #fdc309;
-  color: #000;
-  transition-property: border-radius, background;
-  transition-duration: 0.5s;
   padding: 10px 50px;
   margin-top: 20px;
-}
-
-.success-container a:hover {
-  border-radius: 20px;
-  background: #fef603;
 }
 
 .fa-thumbs-up {
@@ -41,10 +30,6 @@ h1 {
 }
 
 @media (min-width: 700px) {
-  h1 {
-    font-size: 2rem;
-  }
-
   .fa-thumbs-up {
     font-size: 6rem;
   }

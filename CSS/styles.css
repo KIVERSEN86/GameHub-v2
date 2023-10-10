@@ -1,9 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: linear-gradient(to bottom right, #87e2ef 0%, #b8e9c5 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #87e2ef;
   margin: 0;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* background: linear-gradient(to bottom right, #87e2ef 0%, #b8e9c5 100%); */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 h1,
@@ -14,8 +33,11 @@ ul,
 .cta,
 .cta-cart,
 .nav-games a {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
-    sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.4rem;
 }
 
 p,
@@ -27,10 +49,6 @@ label,
 
 a {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-  font-size: 1.2rem;
 }
 
 hr {
@@ -62,8 +80,25 @@ a {
   text-decoration: underline;
 }
 
-.padding-bottom {
-  padding-bottom: 50px;
+.default-style {
+  border-radius: 10px;
+  background: white;
+}
+
+/* BUTTONS */
+
+.cta-default {
+  border-radius: 5px;
+  background: #fdc309;
+  color: #000;
+  font-weight: bold;
+  transition-property: border-radius, background;
+  transition-duration: 0.5s;
+}
+
+.cta-default:hover {
+  border-radius: 20px;
+  background: #fef603;
 }
 
 /* NAV */
@@ -113,7 +148,7 @@ nav a {
 }
 
 .nav-links a {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .secondary-nav {
@@ -123,10 +158,9 @@ nav a {
 
 .secondary-nav a {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   display: inline-block;
   padding: 10px;
   display: flex;
@@ -151,17 +185,8 @@ nav a {
 
 .nav-icon {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
-}
-
-.searchbar {
-  padding: 8px 10px 10px 0;
-  margin: 0 20px 0 8px;
-}
-
-.fa-search {
-  font-size: 2rem;
 }
 
 /* Forms */
@@ -183,21 +208,18 @@ nav a {
 /* Footer */
 
 footer {
-  min-height: 20vh;
-  background: #b4b4b4;
+  background: #1b203d;
+  margin-top: 50px;
 }
 
 .container-footer1 {
   display: flex;
+  flex-shrink: 0;
   width: 80%;
   margin: auto;
   padding-top: 10px;
   flex-direction: column;
   text-align: center;
-}
-
-.container-footer2 i:hover {
-  color: #fff;
 }
 
 .footer-links {
@@ -207,7 +229,7 @@ footer {
 }
 
 footer a {
-  color: #000;
+  color: white;
   margin: 2px;
   padding: 5px;
   font-size: 0.9rem;
@@ -217,7 +239,6 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-  color: #fff;
 }
 
 .container-footer2 {
@@ -228,8 +249,9 @@ footer a:hover {
 }
 
 footer i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 20px;
+  color: white;
 }
 
 @media (min-width: 700px) {
@@ -238,8 +260,8 @@ footer i {
     font-size: 1rem;
   }
 
-  footer i {
-    font-size: 3rem;
+  h1 {
+    font-size: 1.6rem;
   }
 
   .footer-links {
@@ -288,8 +310,7 @@ footer i {
   }
 
   .nav-links a {
-    font-size: 1.4rem;
-    padding: 36px 50px;
+    padding: 40px 50px;
     margin-right: 0px;
     transition-property: background;
     transition-duration: 0.8s;
@@ -300,13 +321,8 @@ footer i {
   }
 
   .nav-links a:hover {
-    text-decoration: underline;
     color: #000;
     background: #f0faf5;
-  }
-
-  .secondary-nav a {
-    padding: 10px;
   }
 
   .searchbar {

@@ -1,12 +1,10 @@
 main {
   max-width: 360px;
-  margin: 0 auto;
   background: #fff;
 }
 
 h1 {
   text-align: center;
-  font-size: 1.6rem;
   padding-top: 30px;
 }
 
@@ -100,10 +98,6 @@ button:hover {
   .logo-signup {
     max-width: 250px;
   }
-
-  h1 {
-    font-size: 2rem;
-  }
 }
 
 @media (min-width: 820px) {
@@ -113,9 +107,5 @@ button:hover {
 
   .signup-container {
     max-width: 700px;
-  }
-
-  h1 {
-    font-size: 2.4rem;
   }
 }

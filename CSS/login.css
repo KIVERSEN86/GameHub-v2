@@ -1,13 +1,11 @@
 main {
-  margin: 100px auto 100px auto;
+  margin-top: 50px;
   max-width: 360px;
-  background: #fff;
 }
 
 h1 {
   text-align: center;
-  padding-top: 20px;
-  font-size: 1.3rem;
+  padding-top: 40px;
 }
 
 p {
@@ -36,11 +34,7 @@ input {
 .button-login {
   padding: 10px 126px;
   margin-top: 20px;
-  font-weight: bold;
   font-size: 1rem;
-  background: #fdc309;
-  transition-property: border-radius, background;
-  transition-duration: 0.5s;
 }
 
 label {
@@ -49,25 +43,12 @@ label {
 
 .button-password {
   padding: 10px 89px;
-  font-weight: bold;
+  margin: 15px 0 40px 0;
   font-size: 1rem;
-  margin: 15px 0 60px 0;
-  background: #fdc309;
-  transition-property: border-radius, background;
-  transition-duration: 0.5s;
-}
-
-.form-login button:hover {
-  border-radius: 20px;
-  background: #fef603;
 }
 
 @media (min-width: 610px) {
   main {
     max-width: 600px;
-  }
-
-  h1 {
-    font-size: 1, 5rem;
   }
 }

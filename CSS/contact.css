@@ -1,12 +1,11 @@
 main {
-  max-width: 1200px;
-  margin: 0 auto;
   background: #fff;
+  margin-top: 50px;
+  border-radius: 10px;
 }
 
 h1 {
   text-align: center;
-  font-size: 1.6rem;
   margin: 0;
   padding: 50px 0;
 }
@@ -45,13 +44,11 @@ select {
 }
 
 .cta-submit {
-  border-radius: 10px;
-  background: #e9e9e9;
-  color: #000;
   font-weight: bold;
   font-size: 1rem;
   padding: 10px;
   cursor: pointer;
+  margin-top: 6px;
 }
 
 input,
@@ -67,6 +64,7 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   margin-top: 100px;
+  padding-bottom: 50px;
   flex-direction: column;
   align-items: center;
 }
@@ -82,6 +80,10 @@ textarea {
   margin: 10px;
 }
 
+.contact-box:hover {
+  box-shadow: 0 10px 10px #686666ee;
+}
+
 .contact-box a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
@@ -91,7 +93,7 @@ textarea {
 }
 
 .contact-box i {
-  font-size: 7rem;
+  font-size: 4rem;
   padding: 20px;
   color: #1b203d;
 }
@@ -102,20 +104,12 @@ textarea {
     max-width: 700px;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
-
   textarea {
     height: 305px;
   }
 
   .flex-contact {
     flex-direction: row;
-  }
-
-  .contact-box {
-    width: 315px;
   }
 }
 
@@ -126,14 +120,6 @@ textarea {
 
   .contact-box {
     margin: 0;
-  }
-
-  h1 {
-    font-size: 2.4rem;
-  }
-
-  .contact-box i {
-    font-size: 10rem;
   }
 
   .form-container {

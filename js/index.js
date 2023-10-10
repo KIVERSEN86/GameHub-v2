@@ -1,33 +1,27 @@
-const baseUrl = "https://noroffiversen.no/Game-Hub/wp-json/wc/store/products?featured=true";
-const detailsCont = document.querySelector(".weekly-container");
+import { data } from "./constants/data.js";
 
-async function getProducts(url) {
-    const response = await fetch(url);
-    const products = await response.json();
-    products.forEach(function(product){
-        detailsCont.innerHTML +=   `<div class="weekly-item">
-                                    <img class="front-img" src="${product.images[0].src}">
-                                    <p class="price-name">${product.name}</p>
-                                    <p class="price">$${product.prices.price}</p>
-                                    <a href="product.html?id=${product.id}" class="cta-cart">Buy</a>
-                                    </div>`
-    })
-}
-getProducts(baseUrl);
+const container = document.querySelector(".content-container");
+const weeklyContainer = document.querySelector(".weekly-container");
 
-const specialUrl = "https://noroffiversen.no/Game-Hub/wp-json/wc/store/products?category=18";
-const specialCont = document.querySelector(".deals-container");
+const content = (data) => {
+  const game = data;
 
-async function getSpecial(url) {
-    const response = await fetch(url);
-    const special = await response.json();
-    special.forEach(function(product){
-        specialCont.innerHTML += `<div class="weekly-item">
-        <img class="front-img" src="${product.images[0].src}">
-        <p class="price-name">${product.name}</p>
-        <p class="price">$${product.prices.price}</p>
-        <a href="product.html?id=${product.id}" class="cta-cart">Buy</a>
-        </div>`
-    })
-}
-getSpecial(specialUrl);
+  for (let i = 0; i < data.length; i++) {
+    container.innerHTML += `
+    <div class="weekly-item">
+    <img class="front-img" src="images/Image-2.jpg" />
+    <p class="price-name">${game[i].title}</p>
+    <p>$${game[i].price}</p>
+    <a href="index.html" class="cta-cart cta-default">Buy</a>
+    </div>`;
+
+    weeklyContainer.innerHTML += `
+    <div class="weekly-item">
+    <img class="front-img" src="images/Image-2.jpg" />
+    <p class="price-name">${game[i].title}</p>
+    <p>$${game[i].price}</p>
+    <a href="index.html" class="cta-cart cta-default">Buy</a>
+    </div>`;
+  }
+};
+content(data);
